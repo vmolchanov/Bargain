@@ -1,11 +1,12 @@
-p { margin: 0; padding: 0; }
-
-ul { margin: 0; padding: 0; list-style-type: none;}
+p, h1, ul { margin: 0; padding: 0; }
 
 a { text-decoration: none; }
 
 body {
 	margin: 0;
+	background-image: url("../img/main_bg.jpg");
+	color: #fff;
+	padding-top: 11px;
 }
 
 .clearfix {
@@ -22,10 +23,90 @@ body {
 	float: right;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
+
+/*=======  header  =======*/
+
+header>div {
+	margin-left: 733px;
+}
+
+.phone {
+	font-family: "Rubik", sans-serif;
+	font-weight: bold;
+	font-size: 21.14pt;
+	padding: 15px 18px 12px 12px;
+	border: 1px solid #b58f64;
+	margin-right: 0;
+}
+
+.feedback-btn {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 10pt;
+	padding: 13px 13px 13px 14px;
+	background-color: #b58f64;
+}
+
+.feedback-btn a {
+	color: #fff;
+}
+
+/*=======  menu  =======*/
+
+.menu {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 20.25pt;
+	background-color: #693dae;
+	border-top: 7px solid #503082;
+	border-bottom: 7px solid #503082;
+	margin-top: 15px;
+}
+
+nav a {
+	color: #c69c6d;
+	display: inline-block;
+	/*margin: 23px 27px 23px 25px;*/
+	margin: 23px 87px 23px 58px;
+}
+
+nav a:first-child {
+	margin-left: 40px;
+}
+
+nav a:last-child {
+	margin-right: 38px;
+}
+
+nav img {
+	/*margin-left: 14px;*/
+	margin-left: -25px;
+	margin-top: -46px;
+}
+
+/*=======  about us  =======*/
+
+#about-us {
+	margin-top: 49px;
+	padding-left: 110px;
+}
+
+#about-us h1 {
+	font-family: "Rubik", sans-serif;
+	font-size: 50.86pt;
+	margin-bottom: 17px;
+}
+
+
+
+
+
 
 .btn {
 	background-color: transparent;
