@@ -30,6 +30,7 @@ body {
 .container {
 	width: 1140px;
 	margin: 0 auto;
+	/*border: 1px solid red;*/
 }
 
 /*=======  header  =======*/
@@ -85,7 +86,6 @@ nav a:last-child {
 }
 
 nav img {
-	/*margin-left: 14px;*/
 	margin-left: -25px;
 	margin-top: -46px;
 }
@@ -93,24 +93,75 @@ nav img {
 /*=======  about us  =======*/
 
 #about-us {
-	margin-top: 49px;
-	padding-left: 110px;
+	margin-top: 79px;
+	margin-bottom: 0;
 }
 
 #about-us h1 {
 	font-family: "Rubik", sans-serif;
-	font-size: 50.86pt;
+	font-size: 53pt;
 	margin-bottom: 17px;
+	margin-left: 65px;
 }
 
-
-
-
-
+#about-us .text {
+	font-family: "PT Sans Caption", sans-serif;
+	border-left: 1px solid #c69c6d;
+	margin-left: 55px;
+	margin-bottom: 34px;
+	padding-left: 22px;
+	font-size: 16pt;
+	line-height: 1.25;
+}
 
 .btn {
 	background-color: transparent;
 }
+
+#about-us .triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 45px solid transparent; 
+	border-left: 45px solid #5b31af;
+}
+
+#about-us .triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 45px solid transparent; 
+	border-left: 45px solid #5b31af;
+}
+
+#about-us .btn>div:first-child {
+	font-family: "Rubik", sans-serif;
+	font-weight: bold;
+	font-size: 20.14pt;
+	background-color: #5b31af;
+	padding: 28px 14px 29px 27px;
+	margin-left: 79px;
+}
+
+#about-us a {
+	color: #fff;
+}
+
+#about-us .image {
+	margin-top: 148px;
+	margin-right: 90px;
+	margin-bottom: -4px;
+}
+
+#about-us .bottom-line {
+	height: 23px;
+	background-color: #b58e65;
+	border-top: 12px solid #8d6e51;
+}
+
+
+
+
+
+
 
 .triangle-topleft {
 	width: 0;
