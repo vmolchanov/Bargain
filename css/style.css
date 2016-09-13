@@ -1,4 +1,4 @@
-p, h1, ul { margin: 0; padding: 0; }
+p,h1,h2,h3,h4,h5,h6,ul{margin:0;padding:0;}
 
 a { text-decoration: none; }
 
@@ -42,17 +42,19 @@ header>div {
 .phone {
 	font-family: "Rubik", sans-serif;
 	font-weight: bold;
-	font-size: 21.14pt;
+	font-size: 20.14pt;
 	padding: 15px 18px 12px 12px;
 	border: 1px solid #b58f64;
 	margin-right: 0;
+	height: 34px;
 }
 
 .feedback-btn {
 	font-family: "PT Sans Caption", sans-serif;
-	font-size: 10pt;
+	font-size: 10.5pt;
 	padding: 13px 13px 13px 14px;
 	background-color: #b58f64;
+	height: 37px;
 }
 
 .feedback-btn a {
@@ -70,24 +72,36 @@ header>div {
 	margin-top: 15px;
 }
 
+nav {
+	position: relative;
+}
+
 nav a {
 	color: #c69c6d;
 	display: inline-block;
-	/*margin: 23px 27px 23px 25px;*/
-	margin: 23px 87px 23px 58px;
+	padding: 23px 25px 24px 25px;
 }
 
-nav a:first-child {
-	margin-left: 40px;
-}
-
-nav a:last-child {
-	margin-right: 38px;
+nav a:hover {
+	background-color: #6f42a0;
+	border-top: #6f42a0;
+	border-bottom: #6f42a0;
 }
 
 nav img {
-	margin-left: -25px;
-	margin-top: -46px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -40px;
+	margin-left: 117px;
+}
+
+nav a:first-child {
+	margin-right: 50px;
+}
+
+nav a:nth-child(4) {
+	margin-left: 50px;
 }
 
 /*=======  about us  =======*/
@@ -157,27 +171,95 @@ nav img {
 	border-top: 12px solid #8d6e51;
 }
 
+/*=======  services  =======*/
 
+#services {
+	background: url(../img/services_bg.jpg) no-repeat center;
+	-webkit-background-size: 100%;
+	background-size: 100% 100%;
+}
 
+#services>div {
+	background-color: rgba(32, 5, 74, 0.8);
+	padding-bottom: 40px;
+}
 
+#services h1,
+#services h3 {
+	font-family: "PT Sans Caption", sans-serif;
+	font-weight: normal;
+	text-align: right;
+	color: #b8b4d9;
+	text-shadow: #28204c 1px 1px 0, #28204c 2px 2px 0, 
+                 #28204c 3px 3px 0, #28204c 4px 4px 0, 
+                 #28204c 5px 5px 0;
+}
 
+#services h1 {
+	font-size: 55.86pt;
+	margin-right: 41px;
+}
 
+#services h3 {
+	font-size: 25.36pt;
+	margin-right: 45px;
+	margin-bottom: 59px;
+}
+
+.serv-list p {
+	font-family: "Rubik", sans-serif;
+	font-size: 18pt;
+	margin-left: 87px;
+	margin-bottom: 7px;
+	font-weight: bold;
+}
+
+.serv-list ul {
+	margin-left: 113px;
+	margin-bottom: 18px;
+}
+
+.serv-list ul {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 14pt;
+}
+
+#services .btn {
+	margin-left: 376px;
+}
 
 .triangle-topleft {
 	width: 0;
 	height: 0;
-	border-top: 10px solid transparent; 
-	border-right: 10px solid red;
+	border-top: 48px solid transparent; 
+	border-right: 48px solid #5b31af;
 }
 
 .triangle-bottomleft {
 	width: 0;
 	height: 0;
-	border-bottom: 10px solid transparent; 
-	border-right: 10px solid red;
+	border-bottom: 48px solid transparent; 
+	border-right: 48px solid #5b31af;
 }
 
 .btn-text {
+	font-family: "Rubik", sans-serif;
+	font-size: 29.07pt;
 	background-color: red;
+	padding: 24px 56px 25px 43px;
+	background-color: #5b31af;
+	color: #fff;
+	font-weight: bold;
 }
+
+#services .under-btn {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 14pt; 
+	color: #594aaf;
+	text-align: right;
+	margin-top: 6px;
+}
+
+/*=======  advantages  =======*/
+
 
