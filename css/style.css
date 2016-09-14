@@ -9,7 +9,7 @@ body {
 	padding-top: 11px;
 }
 
-.clearfix {
+.clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-	width: 1140px;
+	width: 1020px;
 	margin: 0 auto;
 	/*border: 1px solid red;*/
 }
@@ -36,13 +36,13 @@ body {
 /*=======  header  =======*/
 
 header>div {
-	margin-left: 733px;
+	margin-left: 640px; /*733*/
 }
 
 .phone {
 	font-family: "Rubik", sans-serif;
 	font-weight: bold;
-	font-size: 20.14pt;
+	font-size: 18pt;
 	padding: 15px 18px 12px 12px;
 	border: 1px solid #b58f64;
 	margin-right: 0;
@@ -65,7 +65,7 @@ header>div {
 
 .menu {
 	font-family: "PT Sans Caption", sans-serif;
-	font-size: 20.25pt;
+	font-size: 18pt;
 	background-color: #693dae;
 	border-top: 7px solid #503082;
 	border-bottom: 7px solid #503082;
@@ -93,7 +93,7 @@ nav img {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -40px;
-	margin-left: 117px;
+	margin-left: 81px; /*117*/
 }
 
 nav a:first-child {
@@ -113,18 +113,18 @@ nav a:nth-child(4) {
 
 #about-us h1 {
 	font-family: "Rubik", sans-serif;
-	font-size: 53pt;
+	font-size: 50pt;
 	margin-bottom: 17px;
-	margin-left: 65px;
+	margin-left: 33px; /*65*/
 }
 
 #about-us .text {
 	font-family: "PT Sans Caption", sans-serif;
 	border-left: 1px solid #c69c6d;
-	margin-left: 55px;
+	margin-left: 23px; /*55*/
 	margin-bottom: 34px;
 	padding-left: 22px;
-	font-size: 16pt;
+	font-size: 14pt;
 	line-height: 1.25;
 }
 
@@ -152,7 +152,7 @@ nav a:nth-child(4) {
 	font-size: 20.14pt;
 	background-color: #5b31af;
 	padding: 28px 14px 29px 27px;
-	margin-left: 79px;
+	margin-left: 45px; /*79*/
 }
 
 #about-us a {
@@ -161,7 +161,6 @@ nav a:nth-child(4) {
 
 #about-us .image {
 	margin-top: 148px;
-	margin-right: 90px;
 	margin-bottom: -4px;
 }
 
@@ -175,7 +174,7 @@ nav a:nth-child(4) {
 
 #services {
 	background: url(../img/services_bg.jpg) no-repeat center;
-	-webkit-background-size: 100%;
+	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
 
@@ -196,12 +195,12 @@ nav a:nth-child(4) {
 }
 
 #services h1 {
-	font-size: 55.86pt;
+	font-size: 50pt; /*55.86*/
 	margin-right: 41px;
 }
 
 #services h3 {
-	font-size: 25.36pt;
+	font-size: 24pt; /*25.36*/
 	margin-right: 45px;
 	margin-bottom: 59px;
 }
@@ -215,17 +214,14 @@ nav a:nth-child(4) {
 }
 
 .serv-list ul {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 14pt;
 	margin-left: 113px;
 	margin-bottom: 18px;
 }
 
-.serv-list ul {
-	font-family: "PT Sans Caption", sans-serif;
-	font-size: 14pt;
-}
-
 #services .btn {
-	margin-left: 376px;
+	margin-right: 34px; /*376*/
 }
 
 .triangle-topleft {
@@ -258,8 +254,132 @@ nav a:nth-child(4) {
 	color: #594aaf;
 	text-align: right;
 	margin-top: 6px;
+	margin-right: 26px;
 }
 
 /*=======  advantages  =======*/
 
+#advantages {
+	background: url("../img/advantages_bg.jpg");
+}
 
+#advantages h1 {
+	font-family: "PT Sans Caption", sans-serif;
+	font-weight: normal;
+	font-size: 50pt;
+	margin-left: 32px;
+}
+
+#advantages img {
+	position: absolute;
+	margin-top: -147px;
+}
+
+.star-img {
+	margin-left: 48px;
+}
+
+.letter-img {
+	margin-left: 32px;
+}
+
+#advantages .clock-img {
+	margin-top: -162px;
+	margin-left: 31px;
+}
+
+#advantages .piggy-img {
+	margin-top: -249px;
+	margin-left: 41px;
+}
+
+#advantages h4 {
+	font-family: "PT Sans Caption", sans-serif;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+#advantages p {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 10pt;
+	margin-top: 31px;
+}
+
+#advantages .content {
+	padding: 23px 18px 12px 18px;
+}
+
+#advantages .empty-block {
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 87px;
+	background-image: url("../img/advantages_bg.jpg");
+}
+
+#advantages>div div {
+	background-color: #594aaf;
+}
+
+#advantages .spec-pad {
+	padding-bottom: 18px;
+}
+
+#advantages div.to-left,
+#advantages div.to-right {
+	margin-top: 225px;
+}
+
+#advantages div.to-left {
+	margin-right: 5px;
+}
+
+.star-block {
+	margin-left: 66px;
+}
+
+/*=======  feedback  =======*/
+
+#feedback {
+	background: url("../img/feedback_bg.jpg") no-repeat center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+#feedback h1 {
+	font-size: 50pt;
+	font-weight: normal;
+	text-shadow: #594aaf -1px -1px 0, #594aaf -2px -2px 0, 
+                 #594aaf -3px -3px 0, #594aaf -4px -4px 0, 
+                 #594aaf -5px -5px 0;
+    color: #c69c6d;
+    text-align: right;
+    margin-right: 88px;
+    padding-top: 48px;
+}
+
+.circular-img {
+	width: 180px;
+	height: 180px;
+	/*border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;*/
+	background: url("../img/feedback1.png") no-repeat;
+	/*position: absolute;*/
+}
+
+.feedback1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feedback1 .color-block {
+	background-color: rgba(32, 5, 74, 0.8);
+	padding: 25px 40px 33px 137px;
+}
+
+.feedback1 .triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 166px solid transparent; 
+	border-left: 73px solid rgba(32, 5, 74, 0.8);
+}
