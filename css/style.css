@@ -1,4 +1,5 @@
-p,h1,h2,h3,h4,h5,h6,ul{margin:0;padding:0;}
+/*p,h1,h2,h3,h4,h5,h6,ul{margin:0;padding:0;}*/
+* { margin: 0; padding: 0; }
 
 a { text-decoration: none; }
 
@@ -227,20 +228,20 @@ nav a:nth-child(4) {
 .triangle-topleft {
 	width: 0;
 	height: 0;
-	border-top: 48px solid transparent; 
-	border-right: 48px solid #5b31af;
+	border-top: 41px solid transparent; 
+	border-right: 41px solid #5b31af;
 }
 
 .triangle-bottomleft {
 	width: 0;
 	height: 0;
-	border-bottom: 48px solid transparent; 
-	border-right: 48px solid #5b31af;
+	border-bottom: 41px solid transparent; 
+	border-right: 41px solid #5b31af;
 }
 
 .btn-text {
 	font-family: "Rubik", sans-serif;
-	font-size: 29.07pt;
+	font-size: 20.14pt;
 	background-color: red;
 	padding: 24px 56px 25px 43px;
 	background-color: #5b31af;
@@ -254,7 +255,8 @@ nav a:nth-child(4) {
 	color: #594aaf;
 	text-align: right;
 	margin-top: 6px;
-	margin-right: 26px;
+	margin-right: 33px;
+	margin-left: 0;
 }
 
 /*=======  advantages  =======*/
@@ -360,26 +362,56 @@ nav a:nth-child(4) {
 .circular-img {
 	width: 180px;
 	height: 180px;
-	/*border-radius: 40px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;*/
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
 	background: url("../img/feedback1.png") no-repeat;
-	/*position: absolute;*/
+	position: absolute;
 }
 
-.feedback1 {
-	margin-left: auto;
-	margin-right: auto;
+.feedback1,
+.feedback2,
+.feedback3 {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 9pt;
+	margin-bottom: 2px;
+	margin-left: 20%;
+	position: relative;
+	/*line-height: 1px;*/
 }
 
-.feedback1 .color-block {
+.feedback1 .color-block,
+.feedback3 .color-block {
 	background-color: rgba(32, 5, 74, 0.8);
-	padding: 25px 40px 33px 137px;
+	padding: 25px 40px 33px 137px; /*top:25 bottom:33*/
 }
 
-.feedback1 .triangle-bottomright {
+.feedback1 .triangle-bottomright,
+.feedback3 .triangle-bottomright {
+	line-height: 1px;
 	width: 0;
 	height: 0;
-	border-bottom: 166px solid transparent; 
+	border-bottom: 165px solid transparent; 
 	border-left: 73px solid rgba(32, 5, 74, 0.8);
+}
+
+.feedback2 .color-block {
+	background-color: rgba(32, 5, 74, 0.8);
+	padding: 25px 137px 33px 40px;	
+}
+
+.feedback2 .triangle-bottomright {
+	line-height: 1px;
+	width: 0;
+	height: 0;
+	border-bottom: 165px solid transparent; 
+	border-right: 73px solid rgba(32, 5, 74, 0.8);
+}
+
+.feedback1 .circular-img,
+.feedback3 .circular-img {
+	/*margin-right: 10px;
+	margin-bottom: 10px;*/
+	left: -75px;
+	top: -8px;
 }
