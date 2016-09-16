@@ -1,12 +1,5 @@
-/*p,h1,h2,h3,h4,h5,h6,ul{margin:0;padding:0;}*/
-* { margin: 0; padding: 0; }
-
-a { text-decoration: none; }
-
 body {
-	margin: 0;
 	background-image: url("../img/main_bg.jpg");
-	color: #fff;
 	padding-top: 11px;
 }
 
@@ -356,7 +349,8 @@ nav a:nth-child(4) {
     color: #c69c6d;
     text-align: right;
     margin-right: 88px;
-    padding-top: 48px;
+    padding-top: 33px;
+    padding-bottom: 35px;
 }
 
 .circular-img {
@@ -377,7 +371,6 @@ nav a:nth-child(4) {
 	margin-bottom: 2px;
 	margin-left: 20%;
 	position: relative;
-	/*line-height: 1px;*/
 }
 
 .feedback1 .color-block,
@@ -391,27 +384,58 @@ nav a:nth-child(4) {
 	line-height: 1px;
 	width: 0;
 	height: 0;
-	border-bottom: 165px solid transparent; 
+	border-bottom: 163px solid transparent; 
 	border-left: 73px solid rgba(32, 5, 74, 0.8);
 }
 
 .feedback2 .color-block {
 	background-color: rgba(32, 5, 74, 0.8);
-	padding: 25px 137px 33px 40px;	
+	padding: 25px 137px 33px 40px;
+	text-align: right;
 }
 
 .feedback2 .triangle-bottomright {
 	line-height: 1px;
 	width: 0;
 	height: 0;
-	border-bottom: 165px solid transparent; 
+	border-bottom: 163px solid transparent; 
 	border-right: 73px solid rgba(32, 5, 74, 0.8);
 }
 
 .feedback1 .circular-img,
 .feedback3 .circular-img {
-	/*margin-right: 10px;
-	margin-bottom: 10px;*/
 	left: -75px;
 	top: -8px;
+}
+
+.feedback2 .circular-img {
+	left: 461px;
+	top: -8px;
+}
+
+.yet-btn {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 45px;
+}
+
+.yet-btn a {
+	font-family: "PT Sans Caption", sans-serif;
+	color: #594aaf;
+	font-size: 20pt;
+}
+
+/*=======  contacts  =======*/
+
+#contacts h1 {
+	font-family: "PT Sans Caption", sans-serif;
+	font-weight: normal;
+	font-size: 50pt;
+	padding-left: 32px;
+}
+
+footer h3 {
+	font-family: "Rubik", sans-serif;
+	font-size: 24pt;
+	color: #c69c6d;
 }
