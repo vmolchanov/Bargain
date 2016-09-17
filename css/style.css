@@ -24,7 +24,6 @@ body {
 .container {
 	width: 1020px;
 	margin: 0 auto;
-	/*border: 1px solid red;*/
 }
 
 /*=======  header  =======*/
@@ -84,8 +83,6 @@ nav a:hover {
 
 nav img {
 	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: -40px;
 	margin-left: 81px; /*117*/
 }
@@ -119,7 +116,6 @@ nav a:nth-child(4) {
 	margin-bottom: 34px;
 	padding-left: 22px;
 	font-size: 14pt;
-	line-height: 1.25;
 }
 
 .btn {
@@ -151,6 +147,10 @@ nav a:nth-child(4) {
 
 #about-us a {
 	color: #fff;
+}
+
+#about-us a:hover {
+	cursor: pointer;
 }
 
 #about-us .image {
@@ -242,14 +242,16 @@ nav a:nth-child(4) {
 	font-weight: bold;
 }
 
+#services a:hover {
+	cursor: pointer;
+}
+
 #services .under-btn {
 	font-family: "PT Sans Caption", sans-serif;
 	font-size: 14pt; 
 	color: #594aaf;
 	text-align: right;
-	margin-top: 6px;
-	margin-right: 33px;
-	margin-left: 0;
+	margin: 6px 33px 0 0;
 }
 
 /*=======  advantages  =======*/
@@ -316,7 +318,7 @@ nav a:nth-child(4) {
 }
 
 #advantages .spec-pad {
-	padding-bottom: 18px;
+	padding-bottom: 17px;
 }
 
 #advantages div.to-left,
@@ -381,7 +383,6 @@ nav a:nth-child(4) {
 
 .feedback1 .triangle-bottomright,
 .feedback3 .triangle-bottomright {
-	line-height: 1px;
 	width: 0;
 	height: 0;
 	border-bottom: 163px solid transparent; 
@@ -395,7 +396,6 @@ nav a:nth-child(4) {
 }
 
 .feedback2 .triangle-bottomright {
-	line-height: 1px;
 	width: 0;
 	height: 0;
 	border-bottom: 163px solid transparent; 
@@ -427,15 +427,44 @@ nav a:nth-child(4) {
 
 /*=======  contacts  =======*/
 
+#contacts {
+	background: url("../img/contacts_bg.jpg");
+}
+
 #contacts h1 {
 	font-family: "PT Sans Caption", sans-serif;
 	font-weight: normal;
 	font-size: 50pt;
-	padding-left: 32px;
+	padding: 38px 0 29px 32px;
+}
+
+/*=======  footer  =======*/
+
+footer {
+	background: url("../img/footer_bg.jpg");
 }
 
 footer h3 {
 	font-family: "Rubik", sans-serif;
 	font-size: 24pt;
 	color: #c69c6d;
+	margin-top: 44px;
+}
+
+footer img {
+	margin: 33px 27px 27px 0;
+}
+
+footer div.to-right {
+	margin-top: 21px;
+}
+
+footer p a {
+	font-family: "PT Sans Caption", sans-serif;
+	font-size: 14pt;
+	color: #fff;
+}
+
+footer p {
+	text-align: right;
 }

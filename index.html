@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<meta charset="UTF-8">
 	<title>Bargain - Юридические услуги</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dialog.css">
 
 	<!-- Fonts -->
 	<!-- ProximaNova Black -->
@@ -50,9 +52,9 @@
 						помочь Вам в решении самых сложных задач.
 					</p>
 				</div>
-			
+
 				
-				<a href="#">
+				<a onClick="opendialog()">
 					<div class="btn clearfix">
 						<div class="to-left">
 							<span class="upper">проконсультироваться бесплатно</span>
@@ -93,7 +95,7 @@
 				</div>
 
 				<div class="to-right">
-					<a href="#">
+					<a onClick="opendialog()">
 						<div class="btn clearfix">
 							<div class="to-left figures">
 								<div class="triangle-topleft"></div>
@@ -244,6 +246,9 @@
 	<section id="contacts">
 		<h1 class="container"><span class="upper">контакты</span></h1>
 		<!-- yandex maps -->
+		<div>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=OFuWj9__xmZGgoVYLQK3-qKHka5VEt3r&amp;width=100%&amp;height=510&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		</div>
 	</section>
 
 	<footer class="clearfix">
@@ -266,8 +271,21 @@
 		</div>
 	</footer>
 
+	<!-- Modal window -->
+	<div class="back-dialog" id="dialog" method="POST">
+		<div class="dialog-content">
+			<h3 class="dialog-title"><span class="upper">запись<br>на консультацию</span></h3>
+			<form action="">
+				<div><input type="text" name="name" placeholder="Имя"></div>
+				<div><input type="text" name="cellphone" placeholder="Телефон"></div>
+				<div><button type="submit"><span class="upper">отправить</span></button></div>
+			</form>
+		</div>
+	</div>
+
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-	<!-- <script src="js/script.js"></script> -->
+	<script src="libs/jquery-3.1.0.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/dialog.js"></script>
 </body>
 </html>
