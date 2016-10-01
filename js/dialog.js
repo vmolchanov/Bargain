@@ -1,6 +1,4 @@
 $(function() {
-    $("#dialog").hide(); // hide window after the page loaded
-
     $(".back-dialog").click(function(e) {
     	// coordinates of dialog window
 		var dialogHeight = $(".dialog-content").height();
